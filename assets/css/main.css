@@ -2938,3 +2938,13 @@ section,
   color: #060606;
   font-weight: 500;
 }
+
+.mobile-contact {
+  display: none;
+}
+
+@media (max-width:1200px) {
+  .header .contact {
+    display: none;
+  }
+}
