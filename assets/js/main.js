@@ -15,8 +15,16 @@
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
+    const selectLogo = document.querySelector('.cp-logo');
     if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 0 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+    if (window.scrollY > 0) {
+      selectBody.classList.add('scrolled')
+      selectLogo.setAttribute("src", "assets/Logo/doolive_full_dark_transp_logo.png")
+    }
+    else {
+      selectLogo.setAttribute("src", "assets/Logo/doolive_full_light_transp_logo.png")
+      selectBody.classList.remove('scrolled');
+    }
   }
 
   document.addEventListener('scroll', toggleScrolled);
