@@ -22,8 +22,8 @@
       selectLogo.setAttribute("src", "assets/Logo/doolive_full_dark_transp_logo.png")
     }
     else {
-      selectLogo.setAttribute("src", "assets/Logo/doolive_full_light_transp_logo.png")
       selectBody.classList.remove('scrolled');
+      selectLogo.setAttribute("src", "assets/Logo/doolive_full_light_transp_logo.png")
     }
   }
 
