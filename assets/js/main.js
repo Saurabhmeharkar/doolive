@@ -9,26 +9,6 @@
 (function () {
   "use strict";
 
-  /**
-   * Apply .scrolled class to the body as the page is scrolled down
-   */
-  function toggleScrolled() {
-    const selectBody = document.querySelector('body');
-    const selectHeader = document.querySelector('#header');
-    const selectLogo = document.querySelector('.cp-logo');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    if (window.scrollY > 0) {
-      selectBody.classList.add('scrolled')
-      selectLogo.setAttribute("src", "assets/Logo/doolive_full_dark_transp_logo.png")
-    }
-    else {
-      selectBody.classList.remove('scrolled');
-      selectLogo.setAttribute("src", "assets/Logo/doolive_full_light_transp_logo.png")
-    }
-  }
-
-  document.addEventListener('scroll', toggleScrolled);
-  window.addEventListener('load', toggleScrolled);
 
   /**
    * Mobile nav toggle
