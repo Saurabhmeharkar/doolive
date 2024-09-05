@@ -497,14 +497,7 @@ h6 {
   align-items: center;
 }
 
-.footer .footer-about .logo {
-  margin-bottom: 25px;
-}
 
-.footer .footer-about .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
 
 .footer .footer-about .logo span {
   color: var(--heading-color);
@@ -599,6 +592,24 @@ h6 {
 .footer .credits {
   margin-top: 6px;
   font-size: 13px;
+}
+
+.footer .footer-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.footer .footer-logo .logo {
+  margin-top: 30px !important;
+  margin-bottom: 10px;
+}
+
+.footer .footer-logo .logo img {
+  max-height: 40px;
+  margin-right: 6px;
 }
 
 /*--------------------------------------------------------------
